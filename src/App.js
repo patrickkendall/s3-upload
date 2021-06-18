@@ -1,22 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import UploadImageToS3WithReactS3 from "./UploadImagesToS3WithReactS3"
+import UploadImageToS3WithNativeSdk from './UploadImagesToS3WithNativeSDK';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <UploadImageToS3WithReactS3 />
+
       </header>
     </div>
   );
